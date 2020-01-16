@@ -1,0 +1,16 @@
+{
+  "db": {
+    "schemas": "schemas",
+    "host": "localhost",
+    "database": "fundraiseup",
+    "port": 27017,
+    "options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  },
+  "server": {
+    "port": 3000
+  },
+  "staticPath": "static"
+}
