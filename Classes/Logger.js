@@ -6,19 +6,19 @@ module.exports = class Logger {
     }
 
     info(text) {
-        this.write('INFO'.green + ` [${(new Date()).toLocaleString()}] [${this.name}]`.green, text);
+        this.write(' INFO    '.bgGreen.black + `[${(new Date()).toLocaleString().bold}][${this.name}]`.green, text);
     }
 
     warn(text) {
-        this.write('WARNING'.yellow + ` [${(new Date()).toLocaleString()}] [${this.name}]`.yellow, text);
+        this.write(' WARNING '.bgYellow.black + `[${(new Date()).toLocaleString().bold}][${this.name}]`.yellow, text);
     }
 
     log(text) {
-        this.write('DEBUG'.cyan + ` [${(new Date()).toLocaleString()}] [${this.name}]`.cyan, text);
+        this.write(' DEBUG   '.bgCyan.black + `[${(new Date()).toLocaleString().bold}][${this.name}]`.cyan, text);
     }
 
     error(text) {
-        this.write('ERROR'.red + ` [${(new Date()).toLocaleString()}] [${this.name}]`.red, text);
+        this.write(' ERROR   '.bgRed.black + `[${(new Date()).toLocaleString().bold}][${this.name}]`.red, text);
     }
 
     write(subtext, text) {

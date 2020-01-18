@@ -5,6 +5,7 @@
     "database": "fundraiseup",
     "port": 27017,
     "options": {
+      "timestamps": true,
       "useNewUrlParser": true,
       "useUnifiedTopology": true
     }

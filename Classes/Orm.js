@@ -9,6 +9,7 @@ module.exports = class Orm {
         Object.assign(this, struct);
         this.mongoose = mongoose;
         this.mongoose.set('useCreateIndex', true);
+        this.mongoose.set('useFindAndModify', false);
         this.path = `${ROOT_DIR}/${this.conf.get('db:schemas')}`;
     }
 

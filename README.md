@@ -2,18 +2,30 @@
 
 ## Project setup
 ```
-npm install
+npm i
 ```
 
-### Compiles and hot-reloads for development
+### Start developers version
 ```
-npm run serve
+npm run serveDev
 ```
 
-### Compiles and minifies for production
+### Build project
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Start project
+```
+npm start
+```
+
+### To view the logs
+```
+pm2 logs
+```
+## Finaly
+```
+Now you can follow the link to see the project 
+```
+http://localhost:3000/

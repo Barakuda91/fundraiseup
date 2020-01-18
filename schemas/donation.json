@@ -1,0 +1,4 @@
+{
+  "amount": {"type": "Number"},
+  "currency": {"type": "String"}
+}
